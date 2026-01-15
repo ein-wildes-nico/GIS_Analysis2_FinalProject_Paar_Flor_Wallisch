@@ -30,6 +30,8 @@ Zentrale Lage
 evt. Zentrale Lage (Filter nach Bevölkerung)
 
 
+All packages have to be installed (pip install...)
+
 All Features in Projection UTM 33N - EPSG: 32633
 
 --------------------------------------------------------------------------------
