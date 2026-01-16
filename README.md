@@ -4,17 +4,17 @@ Nico Paar - Clemens Wallisch - Maximilian Flor
 
 To do Liste: 
 1. Analyseverfahren mit Ausschlusskriterien (Als Layer)
-Gewässer (OSM = Water) + Buffer 10m (Shape drinnen, Buffer ausstehend)
-Erholungsflächen (OSM Leisure = Park) (Buffer ausstehend)
+Gewässer (OSM = Water) + Buffer 10m (Shape drinnen, reprojected & buffered)
+Erholungsflächen (OSM Leisure = Park) (drinnen, kein Buffer)
 Verkehrsflächen (Buffer nicht notwendig)
-Gebäude (Punkte und Linie rausnehmen und nur Polygone verwenden)
+Schule, Kindergarten, Krankenhaus, Friedhof (Buffer 250m, reprojected, drinnen)
+Gebäude (Punkte und Linie rausnehmen und nur Polygone verwenden!)
 
 Schutzgebiete (Siehe Layer auf Nico PC)
 HQ30 oder HQ 100
 Hanglage (max. 5% Steigung)
 Residential Area (OSM, evt. mit Buffer)
-Schule, Kindergarten, Krankenhaus, Friedhof Buffer 250m
-Militärisches Sperrgebiet
+
 Verkehrsflächen
 
 2. Buffer erstellen
@@ -53,3 +53,9 @@ download from the link and insert it to the data file
 --------------------------------------------------------------------------------
 - DEM (OpenTopography (n.d.). Copernicus GLO-30 Digital Elevation Model. https://portal.opentopography.org/raster?opentopoID=OTSDEM.032021.4326.3
   (Accessed January 15th, 2025))
+
+
+  If error occurs for any package:
+  uninstall packages
+  upgrade pip 
+  reinstall packages
