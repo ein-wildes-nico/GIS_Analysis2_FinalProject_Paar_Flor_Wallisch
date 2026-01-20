@@ -4,30 +4,27 @@ Nico Paar - Clemens Wallisch - Maximilian Flor
 
 To do Liste: 
 1. Analyseverfahren mit Ausschlusskriterien (Als Layer)
-Gewässer (OSM = Water) + Buffer 10m (Shape drinnen, reprojected & buffered)
-Erholungsflächen (OSM Leisure = Park) (drinnen, kein Buffer)
-Verkehrsflächen (Buffer nicht notwendig)
-Schule, Kindergarten, Krankenhaus, Friedhof (Buffer 250m, reprojected, drinnen)
-Gebäude (Punkte und Linie rausnehmen und nur Polygone verwenden!)
+Gewässer (OSM = Water) + Buffer 10m (Shape drinnen, reprojected & buffered) -gemacht
+Erholungsflächen (OSM Leisure = Park) (drinnen, kein Buffer) - gemacht
+Verkehrsflächen (Buffer notwendig) - gemacht
+Schule, Kindergarten, Krankenhaus, Friedhof (Buffer 250m, reprojected, drinnen) -gemacht
+Gebäude (Punkte und Linie rausnehmen und nur Polygone verwenden!) -gemacht
+Hanglage (max. 5% Steigung) -gemacht
 
-Schutzgebiete (Siehe Layer auf Nico PC)
-HQ30 oder HQ 100
-Hanglage (max. 5% Steigung)
-Residential Area (OSM, evt. mit Buffer)
+2. merge und dissolve aller flächen und danach von Graz fläche abzeihen
 
-Verkehrsflächen
+3. Flächen suchen mit mindestens 15 Hektar (150000 m²) und filtern 
 
-2. Buffer erstellen
-
-3. Flächen suchen mit mindestens 15 Hektar (diiie hektar hat)
-
-4. Scores für Gewichtung:
+4. Scores für Gewichtung (mit Routing evtl. von Autobahnausfahrten aus mit nearest_node)
+-->network nx graph für graz downloaden
 Abstand zu Wohngebieten
 ÖV-Anbindung
 Auto Erreichbarkeit (Routing)
 Zentrale Lage 
-
 evt. Zentrale Lage (Filter nach Bevölkerung)
+Abstand Hospitals Kindergarten Friedhof Kirchen
+
+5. Endanalyse und Visualisierung
 
 
 All packages have to be installed (pip install...)
