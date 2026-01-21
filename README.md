@@ -15,7 +15,7 @@ Hanglage (max. 5% Steigung) -gemacht
 
 3. Flächen suchen mit mindestens 15 Hektar (150000 m²) und filtern -gemacht
 
-4. Scores für Gewichtung (mit Routing evtl. von Autobahnausfahrten aus mit nearest_node)
+(ERSTER ENTWURF) 4. Scores für Gewichtung (mit Routing evtl. von Autobahnausfahrten aus mit nearest_node) 
 -->finale polygone in Punkte umwandeln????
 -->network nx graph für graz downloaden
 Abstand zu Wohngebieten
