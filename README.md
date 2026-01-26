@@ -24,11 +24,7 @@ Dateiname: main.ipynb
 	out geom;
 
 	--------------------------------------------------------------------------------
-	Population statistic (Stadt Graz (2025). Zahlen + Fakten: Bevölkerung, Bezirke, Wirtschaft, Geografie.                                                             https://www.graz.at/cms/beitrag/10034466/7772565/Zahlen_Fakten_Bevoelkerung_Bezirke_Wirtschaft.html (Accessed December 2, 2025))
 
-
-	Districts are two seperate datasets in the data file
-	download from the link and insert it to the data file
 
 	--------------------------------------------------------------------------------
 	- DEM (OpenTopography (n.d.). Copernicus GLO-30 Digital Elevation Model. https://portal.opentopography.org/raster?opentopoID=OTSDEM.032021.4326.3
