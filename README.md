@@ -1,17 +1,17 @@
 25W GST.200UB GIS analysis techniques 2 - Final Project – Group 5: Nico Paar - Clemens Wallisch - Maximilian Flor
 
-Project Titel: "Which available sites are most suitable for the development of a new football stadium when considering accessibility and potential land-use conflicts? A case Study of Graz"
+Project Title: "Location Analysis for a new Stadium in a city like Graz"
 
 
 OVERVIEW
 
 The repository contains a GIS-based suitability analysis implemented in
 `main.ipynb`. The objective is to identify and rank potential locations for a
-new stadium in a city like Graz using spatial exclusion criteria, terrain constraints, and
+new stadium using spatial exclusion criteria, terrain constraints, and
 accessibility measures.
 
 The workflow integrates OpenStreetMap data, a digital elevation model (DEM),
-Euclidean distances, network-based accessibility, and a weighted multi-criteria
+euclidean distances, network-based accessibility, and a weighted multi-criteria
 evaluation.
 
 
@@ -42,9 +42,9 @@ INPUT DATA
 
 REQUIREMENTS
 
-- Python 3.10.X, 3.11.X
+- Python 3.10.X or 3.11.X
 
-Required pyhton packages:
+Required python packages:
 
 - pandas
 - numpy
@@ -75,7 +75,7 @@ Verify if git is installed in your terminal: git –version
 
 4. Install Extension: Jupyter
 
-5. Install pyhton version 3.10.X oder 3.11.X
+5. Install pyhton version 3.10.X or 3.11.X
 
 Verify if python is installed in your terminal: py + Tab (for auto-complete)
 
@@ -109,26 +109,29 @@ RUNNING PROJECT
 
 Open `main.ipynb` and run all cells sequentially
 
+
 > Note: If error occurs for any package:
 
 - uninstall packages
 - upgrade pip
 - reinstall packages
 
+
 > Note: If requests fail:
 
 - retry later (rate limits / timeouts can happen)
 - ensure you have internet access
 
-If errors occur with pyproj, execute the following line at the first place (already present in the notebook imports cell):
-os.environ["PROJ_LIB"] = pyproj.datadir.get_data_dir()
+
+> Note: If errors occur with pyproj, execute the following line at the first place:
+- os.environ["PROJ_LIB"] = pyproj.datadir.get_data_dir()
 
 
 METHOD
 
 Main processing steps:
 
-1. Load district boundary and reproject to EPSG:32633
+1. Load district boundary
 2. Download relevant OpenStreetMap layers
 3. Create hard exclusion zones (water, parks, buildings, transport)
 4. Derive slope from DEM and exclude areas steeper than 5°
@@ -141,19 +144,15 @@ Main processing steps:
 All distance calculations are performed in meters using UTM Zone 33N (EPSG:32633)
 
 
-OUTPUTS
+FINAL OUTPUTS
 
 - Visualization 1: Static choropleth suitability map "Top 5 Candidate Sites for Stadium Location" 
 - folder directory: data/graz_final_suitable_areas_slope.shp
 
 - Visualization 2: Interactive Kepler.gl web map "Top 5 Candidate Sites"
 
-- Visualization 3: Grouped bar chart comparing distances to highway exits and public transport stops
+- Visualization 3: Grouped bar chart "Comparison of Various Scores for Top 5 Sites"
 
-
-DISCLAIMER
-
-For certain parts of the code, guidance provided by artificial intelligence was utilized.
 
 
 DATA SOURCES
@@ -165,6 +164,13 @@ Digital Elevation Model: Copernicus GLO-30 DEM accessed via OpenTopography, http
 Geospatial features: OpenStreetMap data accessed via OSMnx, (accessed January 26, 2025)
 
 OpenStreetMap contributors (n.d.). OpenStreetMap. https://www.openstreetmap.org/
+
+
+
+DISCLAIMER
+
+For certain parts of the code, guidance provided by artificial intelligence was utilized.
+
 
 
 AUTHORS
@@ -182,4 +188,4 @@ DATE
 COURSE
 
 25W GST.200UB VU GIS analysis techniques 2​ / Institute for Geography and Spatial Research / University of Graz
-Ass.-Prof. PhD Thibaud Chassin 
+Ass.-Prof. PhD Thibaud Chassin
