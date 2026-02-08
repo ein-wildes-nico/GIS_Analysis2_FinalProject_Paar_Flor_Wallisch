@@ -51,6 +51,7 @@ Required python packages:
 - matplotlib
 - geopandas
 - shapely
+- scipy
 - pyproj
 - rasterio
 - osmnx
@@ -100,7 +101,7 @@ pip install --upgrade pip
 10. Install dependencies:
 
 pip install \
-pandas numpy matplotlib geopandas shapely pyproj rasterio \
+pandas numpy matplotlib geopandas shapely pyproj rasterio scipy \
 osmnx networkx contextily matplotlib-scalebar keplergl notebook
 
 
